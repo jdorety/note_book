@@ -159,12 +159,16 @@ body h4,
 body h5 {
   font-family: sans-serif;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 body h1 {
   font-size: 5.4rem;
 }
 body h2 {
   font-size: 2.4rem;
+}
+body h3 {
+  font-size: 2rem;
 }
 body p {
   font-size: 1.6rem;
@@ -176,6 +180,17 @@ body a {
 }
 body strong {
   font-family: "Sans Forgetica";
+}
+body ul {
+  list-style: inside;
+}
+body li {
+  font-size: 1.6rem;
+}
+body .content {
+  border-top: 2px solid rgba(166, 42, 34, 0.53);
+  margin-bottom: 10px;
+  padding-top: 5px;
 }
 nav {
   top: 0px;
