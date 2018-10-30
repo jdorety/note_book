@@ -1,3 +1,10 @@
+.parallax {
+  width: 100%;
+  height: 250px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -137,9 +144,13 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-body .top-page {
-  border: 3px solid black;
-  margin-top: 50px;
+body header {
+  border-bottom: 1px dotted black;
+  margin-top: 55px;
+}
+body .container {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 body h1,
 body h2,
@@ -157,6 +168,8 @@ body h2 {
 }
 body p {
   font-size: 1.6rem;
+  font-family: "Helvetica", sans-serif;
+  margin: 5px auto;
 }
 body a {
   font-size: 1.6rem;
@@ -164,13 +177,12 @@ body a {
 body strong {
   font-family: "Sans Forgetica";
 }
-header {
-  position: fixed;
+nav {
+  top: 0px;
   max-width: 850px;
   width: 100%;
   margin: 0 auto;
-}
-nav {
+  position: fixed;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -180,6 +192,25 @@ nav {
 nav a {
   font-size: 2rem;
 }
-nav img {
+nav .nav-logo {
   width: 45px;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+}
+.intro h2 {
+  margin-bottom: 5px;
+}
+.intro #snoop {
+  width: 90%;
+  margin: 0 auto;
+  align-self: center;
+  transition-property: transform;
+  transition-duration: 2s;
+}
+.intro #snoop:hover {
+  transform: rotate(360deg);
 }
